@@ -49,12 +49,12 @@
  
         //テクスチャー読み込み
         var textureLoader = new THREE.TextureLoader();  
-        var texture = textureLoader.load("stone.jpg");
+        var texture = textureLoader.load("img/img6.png");
         var mat = new THREE.MeshPhongMaterial();
         mat.map = texture;
         
         //ドーナツ作成
-        var geometry = new THREE.TorusGeometry(0.1,0.03,0.17,1);
+        var geometry = new THREE.TorusGeometry(0.1,0.03,0.16,1);
         //var material = new THREE.MeshPhongMaterial({color:0xFF0000});
         var torus = new THREE.Mesh(geometry,mat);
         torus.position.set(0,0,0); //位置を指定
